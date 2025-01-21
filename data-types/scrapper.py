@@ -12,8 +12,8 @@ response = requests.get(url)
 
 soup = BeautifulSoup(response.content, 'html.parser')
 
-a_tag = soup.find_all('a')
-for div in a_tag:
+div_tag = soup.find_all('div')
+for div in div_tag:
     print(div.text)
 
 
