@@ -13,3 +13,10 @@ if response.status_code == 200:
     print('Current temperature feels like is', data['main']['feels_like'])
     print('Current humidity feels like is', data['main']['humidity'])
 
+elif response.status_code == 404:
+    print(f"Error {response.status_code}: City not found. Please check the city name and try again.")
+elif response.status_code == 401:
+    print(f"Error {response.status_code}: Invalid API Key. Please verify your API Key.")
+else:
+    print(f"Error {response.status_code}: An unexpected error occurred. Please try again later.")   
+
