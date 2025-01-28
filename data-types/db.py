@@ -31,7 +31,7 @@ mycursor = connection.cursor()
 
 # # Close the connection
 # connection.close()
-mycursor.execute("SELECT * FROM students")
+mycursor.execute("SELECT * FROM students WHERE id = 2")
 
 results = mycursor.fetchone()
 
