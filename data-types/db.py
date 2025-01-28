@@ -37,5 +37,9 @@ mycursor = connection.cursor()
 
 # print(results)
 
-mycursor.execute("DELETE FROM students WHERE id = 1")
+# mycursor.execute("DELETE FROM students WHERE id = 1")
+#  connection.commit()
+
+mycursor.execute("UPDATE students SET course = 'Blockchain' WHERE id = 2")
+
 connection.commit()
