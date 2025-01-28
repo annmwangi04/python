@@ -31,8 +31,11 @@ mycursor = connection.cursor()
 
 # # Close the connection
 # connection.close()
-mycursor.execute("SELECT * FROM students ORDER BY name")
+# mycursor.execute("SELECT * FROM students ORDER BY name")
 
-results = mycursor.fetchall()
+# results = mycursor.fetchall()
 
-print(results)
+# print(results)
+
+mycursor.execute("DELETE FROM students WHERE id = 1")
+connection.commit()
