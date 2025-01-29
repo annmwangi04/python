@@ -16,15 +16,24 @@ connection = pymysql.connect(
 mycursor = connection.cursor()
 
 # SQL query to insert data into 'students' table
-# sql = "INSERT INTO students (name, course, phone) VALUES (%s, %s, %s)"
+#  sql = "INSERT INTO students (name, course, phone) VALUES (%s, %s, %s)"
 
-# values = ("Ann", "Data analyst", "0778900965")
+#  values = ("Ann", "Data analyst", "0778900965")
+
+#  students =[
+#     "Ann", "Data analyst", "0778900965"
+#     "Ann", "Data scienist", "0778900965"
+#     "Ann", "fiancial analyst", "0778900965"
+#     "Ann", "Analyst", "0778900965"
+#     "Ann", "Data ", "0778900965"
+
+#  ]
 
 # # Execute the query with values
 # mycursor.execute(sql, values)
 
 # # Commit the changes to the database
-# connection.commit()
+#  connection.commit()
 
 # # Print how many records were inserted
 # print(mycursor.rowcount, "record inserted.")
@@ -40,6 +49,6 @@ mycursor = connection.cursor()
 # mycursor.execute("DELETE FROM students WHERE id = 1")
 #  connection.commit()
 
-mycursor.execute("UPDATE students SET course = 'Blockchain' WHERE id = 2")
+# mycursor.execute("UPDATE students SET course = 'Blockchain' WHERE id = 2")
 
-connection.commit()
+# connection.commit()
